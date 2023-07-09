@@ -1,0 +1,24 @@
+import '../assets/Main.css' 
+import img1 from '../assets/img/img1.png?inline?url';
+import img2 from '../assets/img/img2.png?inline?url';
+
+export function Main(): JSX.Element {
+    const downloadVersion: string = "v0.2.0-dev-4.1 (macOS only)";
+
+    return (
+        <>
+            <div className="box first">
+                <div className="heading-main"><div className="iris-text-heading-main">Iris</div>is a comfortable Markdown note-taking app</div>
+                <div className="box-first-img-container">
+                    <img className="img1" src={img1}></img>
+                    <img className="img1" src={img2}></img>
+                </div>
+                <div className="download-app">
+                    <div className="download-app-text-1">Download</div>
+                    <div className="download-version-text">{downloadVersion}</div>
+                </div>
+            </div>
+            <div className="box second"></div>
+        </>
+    )
+}

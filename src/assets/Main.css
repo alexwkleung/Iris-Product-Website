@@ -1,0 +1,87 @@
+/*
+* will need to add media queries later on
+*/
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url("./fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url("./fonts/Inter-Bold.ttf");
+}
+
+body {
+    margin: 0 auto;
+}
+
+.box.first {
+    background-color: rgb(232, 230, 231);
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-top: -20px;
+    overflow-x: scroll;
+}
+
+.box.second {
+    position: absolute;
+    background-color: rgb(60, 59, 59);
+    width: 100%;
+    margin-top: -20px;
+    height: calc(100% - 50px);
+}
+
+.heading-main {
+    position: relative;
+    /*border: 1px solid black;*/
+    width: 410px;
+    top: 200px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 40px;
+    text-align: center; 
+    transform: translate(10%);
+}
+
+.iris-text-heading-main {
+    color: rgb(146, 146, 245);
+}
+
+.img1 {
+    position: relative;
+    height: 440px;
+    width: auto;
+    left: 650px;
+    top: -30px;
+    padding-left: 20px;
+}
+
+.download-app {
+    position: relative;
+    border: 1px solid black;
+    width: 350px;
+    height: 100px;
+    top: -185px;
+    left: 170px;
+    background-color: rgb(60, 59, 59);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.download-app-text-1 {
+    position: relative;
+    font-family: 'Inter-Bold';
+    font-size: 25px;
+    color: white;
+    left: 115px;
+    top: 20px;
+}
+
+.download-version-text {
+    position: relative;
+    font-family: 'Inter-Regular';
+    color: white;
+    top: 40px;
+    left: 70px;
+}
