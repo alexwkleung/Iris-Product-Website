@@ -28,7 +28,7 @@ body {
     position: absolute;
     background-color: rgb(60, 59, 59);
     width: 100%;
-    margin-top: -20px;
+    margin-top: -70px;
     height: calc(100% - 50px);
 }
 
@@ -45,7 +45,10 @@ body {
 }
 
 .iris-text-heading-main {
-    color: rgb(146, 146, 245);
+    color: rgb(106, 106, 230);
+}
+.iris-text-heading-main:hover {
+    color: rgb(134, 134, 246);
 }
 
 .img1 {
@@ -59,14 +62,26 @@ body {
 
 .download-app {
     position: relative;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 350px;
     height: 100px;
     top: -185px;
     left: 170px;
-    background-color: rgb(60, 59, 59);
+    background-color: rgb(71, 70, 70);
     border-radius: 25px;
     cursor: pointer;
+}
+.download-app:hover {
+    background-color: rgb(89, 88, 88);
+}
+
+.installer-link {
+    display: block;
+    width: 349px;
+    height: 99px;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-decoration: none;
 }
 
 .download-app-text-1 {
@@ -82,6 +97,6 @@ body {
     position: relative;
     font-family: 'Inter-Regular';
     color: white;
-    top: 40px;
+    top: 35px;
     left: 70px;
 }
