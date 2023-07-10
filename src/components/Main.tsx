@@ -1,7 +1,6 @@
 import '../assets/Main.css' 
 import img1 from '../assets/img/img1.png?inline?url';
 import img2 from '../assets/img/img2.png?inline?url';
-import irisDmg from '../assets/installers/iris-0.2.0-dev-4.1.dmg?inline?url'
 
 export function Main(): JSX.Element {
     const downloadVersion: string = "v0.2.0-dev-4.1 (macOS only)";
@@ -18,7 +17,7 @@ export function Main(): JSX.Element {
                     <img className="img1" src={img2}></img>
                 </div>
                 <div className="download-app">
-                    <a className="installer-link" href={irisDmg}>
+                    <a className="installer-link" href="https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.1/iris-0.2.0-dev-4.1.dmg">
                         <div className="download-app-text-1">Download</div>
                         <div className="download-version-text">{downloadVersion}</div>
                     </a>
