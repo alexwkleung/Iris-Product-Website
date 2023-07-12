@@ -8,12 +8,12 @@ import blockCursor from '../assets/img/block-cursor.png?inline?url'
 export function Main(): JSX.Element {
     const downloadVersion: string = "v0.2.0-dev-4.1 (macOS only)";
 
-    const showDark = (): void => {
+    const showAdvancedLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "none";
         (document.querySelector('.img2') as HTMLElement).style.display = "";
     }
 
-    const showLight = (): void => {
+    const showBasicLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "";
         (document.querySelector('.img2') as HTMLElement).style.display = "none";
     }
@@ -27,8 +27,8 @@ export function Main(): JSX.Element {
                         A comfortable Markdown note-taking app
                     </div>
                     <div className="box-first-img-container">
-                        <img className="img1" src={img1} style={{display:""}} onMouseOver={showDark}></img>
-                        <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showLight}></img>
+                        <img className="img1" src={img1} style={{display:""}} onMouseOver={showAdvancedLight}></img>
+                        <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showBasicLight}></img>
                     </div>
                     <div className="download-app">
                         <a className="installer-link" href="https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.1/iris-0.2.0-dev-4.1.dmg">
