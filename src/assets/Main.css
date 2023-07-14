@@ -23,18 +23,13 @@ body {
 .box-first-inner-container {
     position: relative;
     /*border: 1px solid black;*/
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .box-intro {
     position: absolute;
 }
-.box.second {
-    position: relative;
-}
-.box-second-inner-container {
-    position: relative;
-    border: 1px solid black;
-}
-
 .heading-main {
     position: relative;
     /*border: 1px solid black;*/
@@ -59,7 +54,10 @@ body {
 }
 .box-main-inner-container {
     position: relative;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .heading-intro {
     position: relative;
@@ -108,7 +106,7 @@ body {
 .heading-second {
     position: relative;
     width: 410px;
-    top: 250px;
+    top: 100px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -119,7 +117,7 @@ body {
 .box-second-p {
     position: relative;
     width: 410px;
-    top: 250px;
+    top: 100px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -127,13 +125,10 @@ body {
     color: black;
     transform: translate(8%);
 }
-.box-third {
-    position: absolute;
-}
 .heading-third {
     position: relative;
     width: 410px;
-    top: 250px;
+    top: -150px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -144,7 +139,7 @@ body {
 .heading-third-2 {
     position: relative;
     width: 410px;
-    top: 120px;
+    top: -350px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -152,14 +147,10 @@ body {
     color: rgb(106, 106, 230);
     transform: translate(10%);
 }
-.box-third-inner-container {
-    position: relative;
-    border: 1px solid black;
-}
 .box-third-p {
     position: relative;
     width: 410px;
-    top: 250px;
+    top: -150px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -170,7 +161,7 @@ body {
 .box-third-p2 {
     position: relative;
     width: 410px;
-    top: 120px;
+    top: -350px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -178,13 +169,10 @@ body {
     color: black;
     transform: translate(8%);
 }
-.box-fourth {
-    position: absolute;
-}
 .heading-fourth {
     position: relative;
     width: 410px;
-    top: 250px;
+    top: -500px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -195,7 +183,7 @@ body {
 .box-fourth-p {
     position: relative;
     width: 410px;
-    top: 250px;
+    top: -500px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -236,7 +224,7 @@ body {
     width: 800px;
     height: auto;
     left: 610px;
-    top: -200px;
+    top: -400px;
     padding-top: 20px;
 }
 .box-third-img {
@@ -244,14 +232,21 @@ body {
     width: 800px;
     height: auto;
     left: 610px;
-    top: -300px;
+    top: -700px;
 }
 .box-third-img-2 {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -250px;
+    top: -700px;
+}
+.box-fourth-img {
+    position: relative;
+    width: 800px;
+    height: auto;
+    left: 610px;
+    top: -700px;
 }
 .download-app {
     position: absolute;
@@ -267,7 +262,6 @@ body {
 .download-app:hover {
     background-color: rgb(89, 88, 88);
 }
-
 .installer-link {
     display: block;
     width: 349px;
@@ -276,7 +270,6 @@ body {
     border-radius: 25px;
     text-decoration: none;
 }
-
 .download-app-text-1 {
     position: relative;
     font-family: 'Inter-Bold';
@@ -285,7 +278,6 @@ body {
     left: 115px;
     top: 20px;
 }
-
 .download-version-text {
     position: relative;
     font-family: 'Inter-Regular';

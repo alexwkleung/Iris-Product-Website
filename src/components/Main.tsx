@@ -67,10 +67,7 @@ export function Main(): JSX.Element {
                         Extended/flavoured Markdown limits portability, but sticking to common custom syntax helps mitigate cross-compatibility issues
                     </p>
                     <img className="box-intro-img-2"></img>
-                </div>
-            </div>
-            <div className="box second">
-                <div className="box-second-inner-container">
+
                     <div className="heading-second">
                         Basic Mode
                     </div>
@@ -84,10 +81,7 @@ export function Main(): JSX.Element {
                         Complies to CommonMark standard
                     </p>
                     <img className="box-second-img" src={basic}></img>
-                </div>
-            </div>
-            <div className="box third">
-                <div className="box-third-inner-container">
+
                     <div className="heading-third">
                         Advanced Mode
                     </div>
@@ -109,17 +103,15 @@ export function Main(): JSX.Element {
                         Switch to the block cursor to make your editor feel familiar and right at home
                     </p>
                     <img className="box-third-img-2" src={blockCursor}></img>
-                </div>
-            </div>
-            <div className="box fourth">
-                <div className="box-fourth-inner-container">
+                    
                     <div className="heading-fourth">
                         Reading Mode
                     </div>
+                    <p className="box-fourth-p">
+                        Preview your notes with maximum readability
+                    </p>
+                    <img className="box-fourth-img" src={reading}></img>
                 </div>
-                <p className="box-fourth-p">
-                    Preview your notes with maximum readability
-                </p>
             </div>
         </>
     )
