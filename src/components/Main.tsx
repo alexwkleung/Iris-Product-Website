@@ -4,8 +4,12 @@ import img2 from '../assets/img/img2.png?inline?url'
 import basic from '../assets/img/basic.png?inline?url'
 import advanced from '../assets/img/advanced.png?inline?url'
 import blockCursor from '../assets/img/block-cursor.png?inline?url'
+import reading from '../assets/img/reading.png?inline?url'
+import localFileSystem from '../assets/img/local-file-system.png?inline?url'
 
 export function Main(): JSX.Element {
+    //update string for every new version
+    //also update the corresponding github release url 
     const downloadVersion: string = "v0.2.0-dev-4.1 (macOS only)";
 
     const showAdvancedLight = (): void => {
@@ -38,6 +42,33 @@ export function Main(): JSX.Element {
                     </div>
                 </div>
             </div>
+            <div className="box main">
+                <div className="box-main-inner-container">
+                    <div className="heading-intro">
+                        Local-First Application
+                    </div>
+                    <p className="box-intro-p">
+                        Notes are automatically stored in a fixed directory located in the local file system of your computer
+                        <br></br>
+                        <br></br>
+                        No remote syncing & no internet connection needed to view and edit notes
+                        <br></br>
+                        <br></br>
+                        You have 100% control of your notes without vendor lock-in
+                    </p>
+                    <img className="box-intro-img" src={localFileSystem}></img>
+                    <div className="heading-intro-2">
+                        Flexible & Portable File Type
+                    </div>
+                    <p className="box-intro-p2">
+                        Markdown is commonly used nowadays and is quite portable
+                        <br></br>
+                        <br></br>
+                        Extended/flavoured Markdown limits portability, but sticking to common custom syntax helps mitigate cross-compatibility issues
+                    </p>
+                    <img className="box-intro-img-2"></img>
+                </div>
+            </div>
             <div className="box second">
                 <div className="box-second-inner-container">
                     <div className="heading-second">
@@ -48,6 +79,9 @@ export function Main(): JSX.Element {
                         <br></br>
                         <br></br>
                         Limited features, yet still enjoyable for daily use
+                        <br></br>
+                        <br></br>
+                        Complies to CommonMark standard
                     </p>
                     <img className="box-second-img" src={basic}></img>
                 </div>
@@ -58,24 +92,34 @@ export function Main(): JSX.Element {
                         Advanced Mode
                     </div>
                     <p className="box-third-p">
-                        Dislike WYSIWYG Markdown? 
-                        <br></br>
-                        <br></br>
                         You can write your notes
                         as plain-text Markdown in a clean, distraction-free interface
                         <br></br>
                         <br></br>
                         Introduces a powerful note-taking experience with custom Markdown syntax (Diagram, Math, HTML, and more!)
+                        <br></br>
+                        <br></br>
+                        Complies to GitHub Flavoured Markdown (GFM)
                     </p>
                     <img className="box-third-img" src={advanced}></img>
                     <div className="heading-third-2">
                         Advanced Mode Customizations
                     </div>
-                    <div className="box-third-p2">
+                    <p className="box-third-p2">
                         Switch to the block cursor to make your editor feel familiar and right at home
-                    </div>
+                    </p>
                     <img className="box-third-img-2" src={blockCursor}></img>
                 </div>
+            </div>
+            <div className="box fourth">
+                <div className="box-fourth-inner-container">
+                    <div className="heading-fourth">
+                        Reading Mode
+                    </div>
+                </div>
+                <p className="box-fourth-p">
+                    Preview your notes with maximum readability
+                </p>
             </div>
         </>
     )

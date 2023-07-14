@@ -22,13 +22,17 @@ body {
 }
 .box-first-inner-container {
     position: relative;
+    /*border: 1px solid black;*/
+}
+.box-intro {
+    position: absolute;
 }
 .box.second {
-    position: absolute;
-    background-color: rgb(232, 230, 231);
+    position: relative;
 }
 .box-second-inner-container {
     position: relative;
+    border: 1px solid black;
 }
 
 .heading-main {
@@ -44,11 +48,63 @@ body {
 }
 .iris-text-heading-main {
     color: rgb(106, 106, 230);
+    padding-bottom: 8px;
 }
 .iris-text-heading-main:hover {
     color: rgb(134, 134, 246);
 }
 
+.box-main {
+    position: relative;
+}
+.box-main-inner-container {
+    position: relative;
+    border: 1px solid black;
+}
+.heading-intro {
+    position: relative;
+    width: 410px;
+    top: 150px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(106, 106, 230);
+    transform: translate(10%);    
+}
+.box-intro-p {
+    position: relative;
+    width: 410px;
+    top: 150px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    transform: translate(8%);   
+}
+.heading-intro-2 {
+    position: relative;
+    width: 410px;
+    top: -150px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(106, 106, 230);
+    transform: translate(10%);    
+}
+.box-intro-p2 {
+    position: relative;
+    width: 410px;
+    top: -150px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    transform: translate(8%);
+}
 .heading-second {
     position: relative;
     width: 410px;
@@ -77,7 +133,7 @@ body {
 .heading-third {
     position: relative;
     width: 410px;
-    top: 900px;
+    top: 250px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -88,7 +144,7 @@ body {
 .heading-third-2 {
     position: relative;
     width: 410px;
-    top: 650px;
+    top: 120px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -98,11 +154,12 @@ body {
 }
 .box-third-inner-container {
     position: relative;
+    border: 1px solid black;
 }
 .box-third-p {
     position: relative;
     width: 410px;
-    top: 900px;
+    top: 250px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -113,7 +170,7 @@ body {
 .box-third-p2 {
     position: relative;
     width: 410px;
-    top: 680px;
+    top: 120px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -121,9 +178,32 @@ body {
     color: black;
     transform: translate(8%);
 }
-
+.box-fourth {
+    position: absolute;
+}
+.heading-fourth {
+    position: relative;
+    width: 410px;
+    top: 250px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(106, 106, 230);
+    transform: translate(10%);
+}
+.box-fourth-p {
+    position: relative;
+    width: 410px;
+    top: 250px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    transform: translate(8%);
+}
 .img1 {
-    display: flex;
     position: relative;
     width: 800px;
     height: auto;
@@ -131,19 +211,32 @@ body {
     top: -75px;
 }
 .img2 {
-    display: flex;
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
     top: -75px;
 }
+.box-intro-img {
+    position: relative;
+    width: 800px;
+    height: auto;
+    left: 610px;
+    top: -340px;
+}
+.box-intro-img-2 {
+    position: relative;
+    width: 800px;
+    height: auto;
+    left: 610px;
+    top: -620px;
+}
 .box-second-img {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -180px;
+    top: -200px;
     padding-top: 20px;
 }
 .box-third-img {
@@ -151,14 +244,14 @@ body {
     width: 800px;
     height: auto;
     left: 610px;
-    top: 355px;
+    top: -300px;
 }
 .box-third-img-2 {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: 355px;
+    top: -250px;
 }
 .download-app {
     position: absolute;
