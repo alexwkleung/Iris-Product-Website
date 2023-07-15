@@ -6,6 +6,7 @@ import advanced from '../assets/img/advanced.png?inline?url'
 import blockCursor from '../assets/img/block-cursor.png?inline?url'
 import reading from '../assets/img/reading.png?inline?url'
 import localFileSystem from '../assets/img/local-file-system.png?inline?url'
+import markdownIcon from '../assets/img/markdown-icon.png?inline?url'
 
 export function Main(): JSX.Element {
     //update string for every new version
@@ -66,7 +67,7 @@ export function Main(): JSX.Element {
                         <br></br>
                         Extended/flavoured Markdown limits portability, but sticking to common custom syntax helps mitigate cross-compatibility issues
                     </p>
-                    <img className="box-intro-img-2"></img>
+                    <img className="box-intro-img-2" src={markdownIcon}></img>
 
                     <div className="heading-second">
                         Basic Mode
@@ -108,7 +109,10 @@ export function Main(): JSX.Element {
                         Reading Mode
                     </div>
                     <p className="box-fourth-p">
-                        Preview your notes with maximum readability
+                        Preview your notes elegantly with maximum readability 
+                        <br></br>
+                        <br></br>
+                        Supports rendering of custom syntax written in Advanced Mode 
                     </p>
                     <img className="box-fourth-img" src={reading}></img>
                 </div>

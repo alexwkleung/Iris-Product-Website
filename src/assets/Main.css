@@ -12,6 +12,10 @@
     src: url("./fonts/Inter-Bold.ttf");
 }
 
+* {
+    /*border: 1px solid black;*/
+}
+
 body {
     margin: 0;
     background-color: rgb(232, 230, 231);
@@ -25,7 +29,8 @@ body {
     /*border: 1px solid black;*/
     width: 1500px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
+    height: 550px;
 }
 .box-intro {
     position: absolute;
@@ -34,7 +39,7 @@ body {
     position: relative;
     /*border: 1px solid black;*/
     width: 410px;
-    top: 200px;
+    top: 60px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 40px;
@@ -57,12 +62,15 @@ body {
     /*border: 1px solid black;*/
     width: 1500px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    height: 4000px;
+    margin-bottom: 0px;
+    overflow-y: clip;
 }
 .heading-intro {
     position: relative;
     width: 410px;
-    top: 150px;
+    top: 100px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -73,7 +81,7 @@ body {
 .box-intro-p {
     position: relative;
     width: 410px;
-    top: 150px;
+    top: 100px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -84,7 +92,7 @@ body {
 .heading-intro-2 {
     position: relative;
     width: 410px;
-    top: -150px;
+    top: -200px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -95,7 +103,7 @@ body {
 .box-intro-p2 {
     position: relative;
     width: 410px;
-    top: -150px;
+    top: -200px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -106,7 +114,7 @@ body {
 .heading-second {
     position: relative;
     width: 410px;
-    top: 100px;
+    top: -480px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -117,7 +125,7 @@ body {
 .box-second-p {
     position: relative;
     width: 410px;
-    top: 100px;
+    top: -480px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -128,7 +136,7 @@ body {
 .heading-third {
     position: relative;
     width: 410px;
-    top: -150px;
+    top: -850px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -139,7 +147,7 @@ body {
 .heading-third-2 {
     position: relative;
     width: 410px;
-    top: -350px;
+    top: -1150px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -150,7 +158,7 @@ body {
 .box-third-p {
     position: relative;
     width: 410px;
-    top: -150px;
+    top: -850px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -161,7 +169,7 @@ body {
 .box-third-p2 {
     position: relative;
     width: 410px;
-    top: -350px;
+    top: -1150px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -172,7 +180,7 @@ body {
 .heading-fourth {
     position: relative;
     width: 410px;
-    top: -500px;
+    top: -1260px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -183,7 +191,7 @@ body {
 .box-fourth-p {
     position: relative;
     width: 410px;
-    top: -500px;
+    top: -1260px;
     left: 100px;
     font-family: 'Inter-Bold';
     font-size: 30px;
@@ -196,35 +204,35 @@ body {
     width: 800px;
     height: auto;
     left: 610px;
-    top: -75px;
+    top: -200px;
 }
 .img2 {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -75px;
+    top: -200px;
 }
 .box-intro-img {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -340px;
+    top: -380px;
 }
 .box-intro-img-2 {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -620px;
+    top: -700px;
 }
 .box-second-img {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -400px;
+    top: -980px;
     padding-top: 20px;
 }
 .box-third-img {
@@ -232,28 +240,28 @@ body {
     width: 800px;
     height: auto;
     left: 610px;
-    top: -700px;
+    top: -1400px;
 }
 .box-third-img-2 {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -700px;
+    top: -1500px;
 }
 .box-fourth-img {
     position: relative;
     width: 800px;
     height: auto;
     left: 610px;
-    top: -700px;
+    top: -1670px;
 }
 .download-app {
     position: absolute;
     /*border: 1px solid black;*/
     width: 350px;
     height: 100px;
-    top: 450px;
+    top: 330px;
     left: 170px;
     background-color: rgb(71, 70, 70);
     border-radius: 25px;
