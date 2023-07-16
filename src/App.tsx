@@ -1,11 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Main } from './components/Main'
 import { Footer } from './components/Footer'
+import { Navbar } from './components/Navbar'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Main/>
-    <Footer/>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Main></Main>} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 )
