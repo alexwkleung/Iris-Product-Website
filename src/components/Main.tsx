@@ -112,7 +112,7 @@ export function Main(): JSX.Element {
                         Preview your notes elegantly with maximum readability 
                         <br></br>
                         <br></br>
-                        Supports rendering of custom syntax written in Advanced Mode 
+                        Renders custom syntax written in Advanced Mode 
                     </p>
                     <img className="box-fourth-img" src={reading}></img>
                 </div>
