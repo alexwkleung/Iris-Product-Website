@@ -6,6 +6,7 @@
     font-family: 'Inter-Bold';
     src: url('../assets/fonts/Inter-Bold.ttf');
 }
+
 .navbar-inner-container {
     position: fixed;
     /*border: 1px solid black;*/
@@ -19,7 +20,6 @@
     background-color: rgb(232, 230, 231);
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 1500px;
 }
 
 .list-links {
@@ -52,4 +52,53 @@
     width: auto;
     margin-top: -4px;
     padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-inner-container {
+        position: fixed;
+        /*border: 1px solid black;*/
+        font-family: 'Inter-Bold';
+        font-size: 20px;
+        height: 40px;
+        text-align: center;
+        margin-top: -100px;
+        z-index: 1;
+        background-color: rgb(232, 230, 231);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        max-width: 100%;
+    }
+    
+    .list-links {
+        margin-top: 10px;
+    }
+    
+    .route-root {
+        text-decoration: none;
+        padding-right: 15px;
+        color: rgb(106, 106, 142);
+    }
+    .route-root:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(106, 106, 142);
+    }
+    
+    .github-a {
+        text-decoration: none;
+        padding-right: 15px;
+        color: rgb(106, 106, 142);
+    }
+    .github-a:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(106, 106, 142);
+    }
+    
+    .github-icon {
+        position: fixed;
+        height: 30px;
+        width: auto;
+        margin-top: -4px;
+        padding-left: 10px;
+    }
 }

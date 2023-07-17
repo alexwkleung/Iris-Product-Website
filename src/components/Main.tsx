@@ -19,7 +19,7 @@ export function Main(): JSX.Element {
         (document.querySelector('.img1') as HTMLElement).style.display = "none";
         (document.querySelector('.img2') as HTMLElement).style.display = "";
     }
-    
+
     const showBasicLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "";
         (document.querySelector('.img2') as HTMLElement).style.display = "none";
@@ -44,8 +44,8 @@ export function Main(): JSX.Element {
                         A comfortable Markdown note-taking app
                     </div>
                     <div className="box-first-img-container">
-                        <img className="img1" src={img1} style={{display:""}} onMouseOver={showAdvancedLight}></img>
-                        <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showBasicLight}></img>
+                        <img className="img1" src={img1} style={{display:""}} onMouseOver={showAdvancedLight} onClick={showAdvancedLight}></img>
+                        <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
                     </div>
                     <div className="download-app">
                         <a className="installer-link" href="https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.1/iris-0.2.0-dev-4.1.dmg">
@@ -134,8 +134,8 @@ export function Main(): JSX.Element {
                     <p className="box-fifth-p">
                         Switch to the dark theme for a clean interface
                     </p>
-                    <img className="box-fifth-img" src={darkBasic} style={{display:""}} onMouseOver={showAdvancedDark}></img>
-                    <img className="box-fifth-img2" src={darkAdvanced} style={{display:"none"}} onMouseLeave={showBasicDark}></img>
+                    <img className="box-fifth-img" src={darkBasic} style={{display:""}} onMouseOver={showAdvancedDark} onClick={showAdvancedDark}></img>
+                    <img className="box-fifth-img2" src={darkAdvanced} style={{display:"none"}} onMouseLeave={showBasicDark} onClick={showBasicDark}></img>
                 </div>
             </div>
         </>
