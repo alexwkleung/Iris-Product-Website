@@ -63,7 +63,7 @@ body {
     width: 1500px;
     margin: 0 auto;
     margin-top: 10px;
-    height: 4000px;
+    height: 4600px;
     margin-bottom: 0px;
     overflow-y: clip;
 }
@@ -199,6 +199,28 @@ body {
     color: black;
     transform: translate(8%);
 }
+.heading-fifth {
+    position: relative;
+    width: 410px;
+    top: -1360px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(106, 106, 230);
+    transform: translate(10%);
+}
+.box-fifth-p {
+    position: relative;
+    width: 410px;
+    top: -1360px;
+    left: 100px;
+    font-family: 'Inter-Bold';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    transform: translate(10%);
+}
 .img1 {
     position: relative;
     width: 800px;
@@ -256,6 +278,21 @@ body {
     left: 610px;
     top: -1670px;
 }
+.box-fifth-img {
+    position: relative;
+    width: 800px;
+    height: auto;
+    left: 610px;
+    top: -1680px;
+}
+.box-fifth-img2 {
+    position: relative;
+    width: 800px;
+    height: auto;
+    left: 610px;
+    top: -1680px;
+}
+
 .download-app {
     position: absolute;
     /*border: 1px solid black;*/

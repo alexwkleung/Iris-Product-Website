@@ -5,9 +5,9 @@ export function Footer(): JSX.Element {
 
     return (
         <>
-        <div className="footer">
-            Alex Leung &copy; {date.getFullYear()}
-        </div>
+            <div className="footer">
+                Alex Leung &copy; {date.getFullYear()}
+            </div>
         </>
     )
 }

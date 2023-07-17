@@ -7,6 +7,8 @@ import blockCursor from '../assets/img/block-cursor.png?inline?url'
 import reading from '../assets/img/reading.png?inline?url'
 import localFileSystem from '../assets/img/local-file-system.png?inline?url'
 import markdownIcon from '../assets/img/markdown-icon.png?inline?url'
+import darkBasic from '../assets/img/dark-basic.png?inline?url'
+import darkAdvanced from '../assets/img/dark-advanced.png?inline?url'
 
 export function Main(): JSX.Element {
     //update string for every new version
@@ -17,10 +19,20 @@ export function Main(): JSX.Element {
         (document.querySelector('.img1') as HTMLElement).style.display = "none";
         (document.querySelector('.img2') as HTMLElement).style.display = "";
     }
-
+    
     const showBasicLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "";
         (document.querySelector('.img2') as HTMLElement).style.display = "none";
+    }
+
+    const showAdvancedDark = (): void => {
+        (document.querySelector('.box-fifth-img') as HTMLElement).style.display = "none";
+        (document.querySelector('.box-fifth-img2') as HTMLElement).style.display = "";
+    }
+
+    const showBasicDark = (): void => {
+        (document.querySelector('.box-fifth-img') as HTMLElement).style.display = "";
+        (document.querySelector('.box-fifth-img2') as HTMLElement).style.display = "none";
     }
 
     return (
@@ -115,6 +127,15 @@ export function Main(): JSX.Element {
                         Renders custom syntax written in Advanced Mode 
                     </p>
                     <img className="box-fourth-img" src={reading}></img>
+
+                    <div className="heading-fifth">
+                        Themes
+                    </div>
+                    <p className="box-fifth-p">
+                        Switch to the dark theme for a clean interface
+                    </p>
+                    <img className="box-fifth-img" src={darkBasic} style={{display:""}} onMouseOver={showAdvancedDark}></img>
+                    <img className="box-fifth-img2" src={darkAdvanced} style={{display:"none"}} onMouseLeave={showBasicDark}></img>
                 </div>
             </div>
         </>
