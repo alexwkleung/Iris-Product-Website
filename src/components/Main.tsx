@@ -13,7 +13,7 @@ import darkAdvanced from '../assets/img/dark-advanced.png?inline?url'
 export function Main(): JSX.Element {
     //update string for every new version
     //also update the corresponding github release url 
-    const downloadVersion: string = "v0.2.0-dev-4.1 (macOS only)";
+    const downloadVersion: string = "v0.2.0-dev-4.2 (macOS only)";
 
     const showAdvancedLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "none";
@@ -48,7 +48,7 @@ export function Main(): JSX.Element {
                         <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
                     </div>
                     <div className="download-app">
-                        <a className="installer-link" href="https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.1/iris-0.2.0-dev-4.1.dmg">
+                        <a className="installer-link" href="https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.2/iris-0.2.0-dev-4.2.dmg">
                             <div className="download-app-text-1">Download</div>
                             <div className="download-version-text">{downloadVersion}</div>
                         </a>
