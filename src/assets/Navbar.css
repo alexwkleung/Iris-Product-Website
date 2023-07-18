@@ -54,7 +54,7 @@
     padding-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .navbar-inner-container {
         position: fixed;
         /*border: 1px solid black;*/
@@ -67,7 +67,7 @@
         background-color: rgb(232, 230, 231);
         padding-top: 5px;
         padding-bottom: 5px;
-        max-width: 100%;
+        width: 390px;
     }
     
     .list-links {

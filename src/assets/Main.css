@@ -334,7 +334,7 @@ body {
 /*
 * mobile
 */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     body {
         margin: 0;
         background-color: rgb(232, 230, 231);
@@ -346,10 +346,10 @@ body {
     .box-first-inner-container {
         position: relative;
         /*border: 1px solid black;*/
-        width: 100%;
-        margin: 0 auto;
+        width: 380px;
         margin-top: 100px;
         height: 800px;
+        margin-left: 10px;
     }
     .box-intro {
         position: absolute;
@@ -357,13 +357,14 @@ body {
     .heading-main {
         position: relative;
         /*border: 1px solid black;*/
-        width: 410px;
+        width: 322px;
         top: 20px;
         left: -40px;
         font-family: 'Inter-Bold';
         font-size: 40px;
         text-align: center; 
         transform: translate(10%);
+        margin-left: 40px;
     }
     .iris-text-heading-main {
         color: rgb(106, 106, 230);
@@ -379,16 +380,16 @@ body {
     .box-main-inner-container {
         position: relative;
         /*border: 1px solid black;*/
-        width: 100%;
+        width: 380px;
         margin: 0 auto;
         margin-top: 10px;
-        height: 4900px;
+        height: 4680px;
         margin-bottom: 0px;
         overflow-y: clip;
     }
     .heading-intro {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 100px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -399,7 +400,7 @@ body {
     }
     .box-intro-p {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 100px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -410,7 +411,7 @@ body {
     }
     .heading-intro-2 {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 150px;
         left: -35px;
         font-family: 'Inter-Bold';
@@ -421,7 +422,7 @@ body {
     }
     .box-intro-p2 {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 150px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -432,7 +433,7 @@ body {
     }
     .heading-second {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 250px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -443,7 +444,7 @@ body {
     }
     .box-second-p {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 250px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -454,7 +455,7 @@ body {
     }
     .heading-third {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 250px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -465,7 +466,7 @@ body {
     }
     .heading-third-2 {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 300px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -476,7 +477,7 @@ body {
     }
     .box-third-p {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 250px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -487,7 +488,7 @@ body {
     }
     .box-third-p2 {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 300px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -498,7 +499,7 @@ body {
     }
     .heading-fourth {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 350px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -509,7 +510,7 @@ body {
     }
     .box-fourth-p {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 350px;
         left: -30px;
         font-family: 'Inter-Bold';
@@ -520,95 +521,95 @@ body {
     }
     .heading-fifth {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 400px;
         left: -30px;
         font-family: 'Inter-Bold';
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
         color: rgb(106, 106, 230);
         transform: translate(10%);
     }
     .box-fifth-p {
         position: relative;
-        width: 410px;
+        width: 380px;
         top: 400px;
         left: -30px;
         font-family: 'Inter-Bold';
-        font-size: 30px;
+        font-size: 28px;
         text-align: center;
         color: black;
         transform: translate(10%);
     }
     .img1 {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: -2.5px;
+        left: 10px;
         top: 290px;
     }
     .img2 {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: -2px;
+        left: 10px;
         top: 290px;
     }
     .box-intro-img {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 100px;
     }
     .box-intro-img-2 {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 210px;
     }
     .box-second-img {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 220px;
         padding-top: 20px;
     }
     .box-third-img {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 250px;
     }
     .box-third-img-2 {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 300px;
     }
     .box-fourth-img {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 350px;
     }
     .box-fifth-img {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 400px;
     }
     .box-fifth-img2 {
         position: relative;
-        width: 100%;
+        width: 350px;
         height: auto;
-        left: 1px;
+        left: 30px;
         top: 400px;
     }
     
@@ -622,6 +623,7 @@ body {
         background-color: rgb(71, 70, 70);
         border-radius: 25px;
         cursor: pointer;
+        margin-left: -15px;
     }
     .download-app:hover {
         background-color: rgb(89, 88, 88);
