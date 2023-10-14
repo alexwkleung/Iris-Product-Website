@@ -10,11 +10,17 @@ import markdownIcon from '../assets/img/markdown-icon.png?inline?url'
 import darkBasic from '../assets/img/dark-basic.png?inline?url'
 import darkAdvanced from '../assets/img/dark-advanced.png?inline?url'
 
-export function Main(): JSX.Element {
-    //update string for every new version
-    //also update the corresponding github release url 
-    const downloadVersion: string = "v0.2.0-dev-4.2 (macOS only)";
+interface IInstallerInfo {
+    installerVersion: string,
+    installerUrl: string,
+}
 
+const InstallerInfo: IInstallerInfo = {
+    installerVersion: "v0.2.0-dev-4.2 (macOS only)",
+    installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.2/iris-0.2.0-dev-4.2.dmg"
+}
+
+export function Main(): JSX.Element {
     const showAdvancedLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "none";
         (document.querySelector('.img2') as HTMLElement).style.display = "";
@@ -48,9 +54,9 @@ export function Main(): JSX.Element {
                         <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
                     </div>
                     <div className="download-app">
-                        <a className="installer-link" href="https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.2/iris-0.2.0-dev-4.2.dmg">
+                        <a className="installer-link" href={InstallerInfo.installerUrl}>
                             <div className="download-app-text-1">Download</div>
-                            <div className="download-version-text">{downloadVersion}</div>
+                            <div className="download-version-text">{InstallerInfo.installerVersion}</div>
                         </a>
                     </div>
                 </div>
