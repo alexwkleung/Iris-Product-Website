@@ -1,6 +1,4 @@
 import '../assets/Main.css' 
-import img1 from '../assets/img/img1.png?inline?url'
-import img2 from '../assets/img/img2.png?inline?url'
 import basic from '../assets/img/basic.png?inline?url'
 import advanced from '../assets/img/advanced.png?inline?url'
 import blockCursor from '../assets/img/block-cursor.png?inline?url'
@@ -16,8 +14,8 @@ interface IInstallerInfo {
 }
 
 const InstallerInfo: IInstallerInfo = {
-    installerVersion: "v0.2.0-dev-4.2 (macOS only)",
-    installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.2/iris-0.2.0-dev-4.2.dmg"
+    installerVersion: "v0.2.0-dev-4.3 (macOS only)",
+    installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.3-v/iris-0.2.0-dev-4.3-universal.dmg"
 }
 
 export function Main(): JSX.Element {
@@ -47,11 +45,11 @@ export function Main(): JSX.Element {
                 <div className="box-first-inner-container">
                     <div className="heading-main">
                         <div className="iris-text-heading-main">Iris</div>
-                        A comfortable Markdown note-taking app
+                        <div className="heading-main-content">A comfortable note-taking app powered by Markdown</div>
                     </div>
                     <div className="box-first-img-container">
-                        <img className="img1" src={img1} style={{display:""}} onMouseOver={showAdvancedLight} onClick={showAdvancedLight}></img>
-                        <img className="img2" src={img2} style={{display:"none"}} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
+                        <img className="img1" src={basic} style={{display:""}} onMouseOver={showAdvancedLight} onClick={showAdvancedLight}></img>
+                        <img className="img2" src={advanced} style={{display:"none"}} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
                     </div>
                     <div className="download-app">
                         <a className="installer-link" href={InstallerInfo.installerUrl}>
@@ -138,7 +136,7 @@ export function Main(): JSX.Element {
                         Themes
                     </div>
                     <p className="box-fifth-p">
-                        Switch to the dark theme for a clean interface
+                        Switch to the dark theme for a clean user interface
                     </p>
                     <img className="box-fifth-img" src={darkBasic} style={{display:""}} onMouseOver={showAdvancedDark} onClick={showAdvancedDark}></img>
                     <img className="box-fifth-img2" src={darkAdvanced} style={{display:"none"}} onMouseLeave={showBasicDark} onClick={showBasicDark}></img>

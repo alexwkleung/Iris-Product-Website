@@ -18,8 +18,8 @@
     margin-top: -100px;
     z-index: 1;
     background-color: rgb(232, 230, 231);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .list-links {
@@ -67,7 +67,7 @@
         background-color: rgb(232, 230, 231);
         padding-top: 5px;
         padding-bottom: 5px;
-        width: 390px;
+        width: 400px;
     }
     
     .list-links {
