@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import '../assets/Main.css' 
 import basic from '../assets/img/basic.png?inline?url'
 import advanced from '../assets/img/advanced.png?inline?url'
@@ -14,11 +15,20 @@ interface IInstallerInfo {
 }
 
 const InstallerInfo: IInstallerInfo = {
-    installerVersion: "v0.2.0-dev-4.3 (macOS only)",
-    installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-4.3-v/iris-0.2.0-dev-4.3-universal.dmg"
+    installerVersion: "v0.2.0-dev-5.0 (macOS only)",
+    installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-5.0-v/iris-0.2.0-dev-5.0-universal.dmg"
 }
 
 export function Main(): JSX.Element {
+    //switch to useRef hook instead of querySelector?
+
+    useEffect(() => {
+        (document.querySelector('.img1') as HTMLElement).style.display = "";
+        (document.querySelector('.img2') as HTMLElement).style.display = "none";
+        (document.querySelector('.box-fifth-img') as HTMLElement).style.display = "";
+        (document.querySelector('.box-fifth-img2') as HTMLElement).style.display = "none";
+    }, [])
+
     const showAdvancedLight = (): void => {
         (document.querySelector('.img1') as HTMLElement).style.display = "none";
         (document.querySelector('.img2') as HTMLElement).style.display = "";
@@ -48,8 +58,8 @@ export function Main(): JSX.Element {
                         <div className="heading-main-content">A comfortable note-taking app powered by Markdown</div>
                     </div>
                     <div className="box-first-img-container">
-                        <img className="img1" src={basic} style={{display:""}} onMouseOver={showAdvancedLight} onClick={showAdvancedLight}></img>
-                        <img className="img2" src={advanced} style={{display:"none"}} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
+                        <img className="img1" src={basic} onMouseOver={showAdvancedLight} onClick={showAdvancedLight}></img>
+                        <img className="img2" src={advanced} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
                     </div>
                     <div className="download-app">
                         <a className="installer-link" href={InstallerInfo.installerUrl}>
@@ -138,8 +148,8 @@ export function Main(): JSX.Element {
                     <p className="box-fifth-p">
                         Switch to the dark theme for a clean user interface
                     </p>
-                    <img className="box-fifth-img" src={darkBasic} style={{display:""}} onMouseOver={showAdvancedDark} onClick={showAdvancedDark}></img>
-                    <img className="box-fifth-img2" src={darkAdvanced} style={{display:"none"}} onMouseLeave={showBasicDark} onClick={showBasicDark}></img>
+                    <img className="box-fifth-img" src={darkBasic} onMouseOver={showAdvancedDark} onClick={showAdvancedDark}></img>
+                    <img className="box-fifth-img2" src={darkAdvanced} onMouseLeave={showBasicDark} onClick={showBasicDark}></img>
                 </div>
             </div>
         </>
