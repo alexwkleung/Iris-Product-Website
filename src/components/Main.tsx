@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import '../assets/Main.css' 
 import basic from '../assets/img/basic.png?inline?url'
 import advanced from '../assets/img/advanced.png?inline?url'
@@ -7,48 +6,18 @@ import reading from '../assets/img/reading.png?inline?url'
 import localFileSystem from '../assets/img/local-file-system.png?inline?url'
 import markdownIcon from '../assets/img/markdown-icon.png?inline?url'
 import darkBasic from '../assets/img/dark-basic.png?inline?url'
-import darkAdvanced from '../assets/img/dark-advanced.png?inline?url'
 
-interface IInstallerInfo {
+interface InstallerInfo {
     installerVersion: string,
     installerUrl: string,
 }
 
-const InstallerInfo: IInstallerInfo = {
+const installerInfo: InstallerInfo = {
     installerVersion: "v0.2.0-dev-5.0 (macOS only)",
     installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-5.0-v/iris-0.2.0-dev-5.0-universal.dmg"
 }
 
 export function Main(): JSX.Element {
-    //switch to useRef hook instead of querySelector?
-
-    useEffect(() => {
-        (document.querySelector('.img1') as HTMLElement).style.display = "";
-        (document.querySelector('.img2') as HTMLElement).style.display = "none";
-        (document.querySelector('.box-fifth-img') as HTMLElement).style.display = "";
-        (document.querySelector('.box-fifth-img2') as HTMLElement).style.display = "none";
-    }, [])
-
-    const showAdvancedLight = (): void => {
-        (document.querySelector('.img1') as HTMLElement).style.display = "none";
-        (document.querySelector('.img2') as HTMLElement).style.display = "";
-    }
-
-    const showBasicLight = (): void => {
-        (document.querySelector('.img1') as HTMLElement).style.display = "";
-        (document.querySelector('.img2') as HTMLElement).style.display = "none";
-    }
-
-    const showAdvancedDark = (): void => {
-        (document.querySelector('.box-fifth-img') as HTMLElement).style.display = "none";
-        (document.querySelector('.box-fifth-img2') as HTMLElement).style.display = "";
-    }
-
-    const showBasicDark = (): void => {
-        (document.querySelector('.box-fifth-img') as HTMLElement).style.display = "";
-        (document.querySelector('.box-fifth-img2') as HTMLElement).style.display = "none";
-    }
-
     return (
         <>
             <div className="box first">
@@ -58,13 +27,12 @@ export function Main(): JSX.Element {
                         <div className="heading-main-content">A comfortable note-taking app powered by Markdown</div>
                     </div>
                     <div className="box-first-img-container">
-                        <img className="img1" src={basic} onMouseOver={showAdvancedLight} onClick={showAdvancedLight}></img>
-                        <img className="img2" src={advanced} onMouseLeave={showBasicLight} onClick={showBasicLight}></img>
+                        <img className="img1" src={basic}></img>
                     </div>
                     <div className="download-app">
-                        <a className="installer-link" href={InstallerInfo.installerUrl}>
+                        <a className="installer-link" href={installerInfo.installerUrl}>
                             <div className="download-app-text-1">Download</div>
-                            <div className="download-version-text">{InstallerInfo.installerVersion}</div>
+                            <div className="download-version-text">{installerInfo.installerVersion}</div>
                         </a>
                     </div>
                 </div>
@@ -148,8 +116,7 @@ export function Main(): JSX.Element {
                     <p className="box-fifth-p">
                         Switch to the dark theme for a clean user interface
                     </p>
-                    <img className="box-fifth-img" src={darkBasic} onMouseOver={showAdvancedDark} onClick={showAdvancedDark}></img>
-                    <img className="box-fifth-img2" src={darkAdvanced} onMouseLeave={showBasicDark} onClick={showBasicDark}></img>
+                    <img className="box-fifth-img" src={darkBasic}></img>
                 </div>
             </div>
         </>
