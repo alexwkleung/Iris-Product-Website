@@ -6,16 +6,7 @@ import reading from '../assets/img/reading.png?inline?url'
 import localFileSystem from '../assets/img/local-file-system.png?inline?url'
 import markdownIcon from '../assets/img/markdown-icon.png?inline?url'
 import darkBasic from '../assets/img/dark-basic.png?inline?url'
-
-interface InstallerInfo {
-    installerVersion: string,
-    installerUrl: string,
-}
-
-const installerInfo: InstallerInfo = {
-    installerVersion: "v0.2.0-dev-5.0 (macOS only)",
-    installerUrl: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-5.0-v/iris-0.2.0-dev-5.0-universal.dmg"
-}
+import { Link } from 'react-router-dom'
 
 export function Main(): JSX.Element {
     return (
@@ -30,10 +21,7 @@ export function Main(): JSX.Element {
                         <img className="img1" src={basic}></img>
                     </div>
                     <div className="download-app">
-                        <a className="installer-link" href={installerInfo.installerUrl}>
-                            <div className="download-app-text-1">Download</div>
-                            <div className="download-version-text">{installerInfo.installerVersion}</div>
-                        </a>
+                            <Link className="download-app-text-1" to={'/downloads'}><div className="download-iris-text">Download Iris</div></Link>
                     </div>
                 </div>
             </div>

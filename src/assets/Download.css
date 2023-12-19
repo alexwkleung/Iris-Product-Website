@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+}
+
+.download-container {
+    position: relative;
+    /*border: 1px solid black;*/
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.download-iris {
+    text-align: center;
+    font-family: 'Inter-Bold';
+    font-size: 32px;
+}
+
+.installer-version-1 {
+    position: relative;
+    font-family: 'Inter-Regular';
+    width: calc(((1500px / 1.5) / 1.5) / 1.5);
+    top: 20px;
+    margin: 0 auto;
+}
+
+.download-box-container {
+    position: relative;
+    /*border: 1px solid black;*/
+    width: calc(1500px / 1.5);
+    height: 900px;
+    margin: 0 auto;
+    top: 50px;
+}
+
+.installers-container {
+    /*border: 1px solid black;*/
+    width: calc((1500px / 1.5) / 1.5);
+    height: calc(900px / 2);
+    margin: 0 auto;
+}
+
+.desktop-installers {
+    /*border: 1px solid black;*/
+    width: calc(((1500px / 1.5) / 1.5) / 1.5);
+    height: calc(900px / 2);
+    margin: 0 auto;
+}
+
+.macos-installers-title {
+    position: relative;
+    font-family: 'Inter-Bold';
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.macos-link-platforms {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.macos-a {
+    font-family: 'Inter-Bold';
+    text-decoration: none;
+    color: rgb(106, 106, 142);
+}
+
+.installers-hr {
+    border-bottom: 0;
+}
+
+@media (max-width: 500px) {
+    .download-container {
+        position: relative;
+        /*border: 1px solid black;*/
+        width: 380px;
+        margin: 0 auto;
+        margin-top: 100px;
+        height: 100vh;
+    }
+
+    .download-box-container {
+        position: relative;
+        /*border: 1px solid black;*/
+        width: 380px;
+        height: 900px;
+        margin: 0 auto;
+        top: 50px;
+    }
+    
+    .installer-version-1 {
+        position: relative;
+        font-family: 'Inter-Regular';
+        width: 380px;
+        top: 20px;
+        margin: 0 auto;
+    }
+
+    .installers-container {
+        /*border: 1px solid black;*/
+        width: 380px;
+        height: calc(900px / 2);
+        margin: 0 auto;
+    }
+    
+    .desktop-installers {
+        /*border: 1px solid black;*/
+        width: 380px;
+        height: calc(900px / 2);
+        margin: 0 auto;
+    }
+}

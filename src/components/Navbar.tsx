@@ -9,6 +9,7 @@ export function Navbar(): JSX.Element {
                 <div className="navbar-inner-container">
                     <div className="list-links">
                         <Link className="route-root" to={`/`}>Home</Link>
+                        <Link className="route-downloads" to={`/downloads`}>Download</Link>
                         <a className="github-a" href="https://github.com/alexwkleung/Iris" target="_blank">GitHub <img className="github-icon" src={github}></img></a>
                     </div>
                 </div>

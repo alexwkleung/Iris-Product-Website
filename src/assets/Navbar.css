@@ -29,6 +29,7 @@
 .route-root {
     text-decoration: none;
     padding-right: 15px;
+    padding-left: 15px;
     color: rgb(106, 106, 142);
 }
 .route-root:hover {
@@ -36,9 +37,21 @@
     text-decoration-color: rgb(106, 106, 142);
 }
 
+.route-downloads {
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: rgb(106, 106, 142);
+}
+.route-downloads:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(106, 106, 142);
+}
+
 .github-a {
     text-decoration: none;
     padding-right: 15px;
+    padding-left: 15px;
     color: rgb(106, 106, 142);
 }
 .github-a:hover {
@@ -80,7 +93,12 @@
         color: rgb(106, 106, 142);
     }
     .route-root:hover {
-        text-decoration: underline;
+        text-decoration: none;
+        text-decoration-color: rgb(106, 106, 142);
+    }
+    
+    .route-downloads:hover {
+        text-decoration: none;
         text-decoration-color: rgb(106, 106, 142);
     }
     
@@ -90,7 +108,7 @@
         color: rgb(106, 106, 142);
     }
     .github-a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         text-decoration-color: rgb(106, 106, 142);
     }
     

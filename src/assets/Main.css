@@ -285,10 +285,10 @@ body {
 .download-app {
     position: absolute;
     /*border: 1px solid black;*/
-    width: 350px;
+    width: 300px;
     height: 100px;
     top: 330px;
-    left: 170px;
+    left: 200px;
     background-color: rgb(71, 70, 70);
     border-radius: 25px;
     cursor: pointer;
@@ -296,28 +296,23 @@ body {
 .download-app:hover {
     background-color: rgb(89, 88, 88);
 }
-.installer-link {
-    display: block;
-    width: 349px;
-    height: 99px;
-    /*border: 1px solid black;*/
-    border-radius: 25px;
-    text-decoration: none;
-}
 .download-app-text-1 {
-    position: relative;
+    position: absolute;
     font-family: 'Inter-Bold';
     font-size: 25px;
     color: white;
-    left: 115px;
-    top: 20px;
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    width: 300px;
+    height: 100px;
+    border-radius: 25px;
 }
-.download-version-text {
-    position: relative;
-    font-family: 'Inter-Regular';
-    color: white;
-    top: 35px;
-    left: 70px;
+
+.download-iris-text {
+    position: absolute;
+    left: 65px;
+    top: 32px;
+    width: 200px;
 }
 
 /*
@@ -642,5 +637,22 @@ body {
         color: white;
         top: 35px;
         left: 70px;
+    }
+    .download-app {
+        position: absolute;
+        /*border: 1px solid black;*/
+        width: 300px;
+        height: 100px;
+        top: 330px;
+        left: 60px;
+        background-color: rgb(71, 70, 70);
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .download-iris-text {
+        position: relative;
+        left: -50px;
+        top: 15px;
+        width: 200px;
     }
 }
