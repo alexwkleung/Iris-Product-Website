@@ -23,7 +23,7 @@ const installerInfo: InstallerInfo = {
         installerUrl: {
             x64: "",
             arm64: "",
-            universal: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-5.0-v/iris-0.2.0-dev-5.0-universal.dmg"
+            universal: "https://github.com/alexwkleung/Iris/releases/download/v0.2.0-dev-6.0-v/iris-0.2.0-dev-6.0-universal.dmg"
         }
     },
     Windows: {
