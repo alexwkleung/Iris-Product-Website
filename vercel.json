@@ -1,0 +1,14 @@
+{
+    "routes": [
+        { 
+            "src": "/", 
+            "dest": "/",
+            "status": 200
+        },
+        {
+            "src": "/downloads",
+            "dest": "/",
+            "status": 200
+        }
+    ]
+}
