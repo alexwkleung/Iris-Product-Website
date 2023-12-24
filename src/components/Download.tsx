@@ -18,7 +18,7 @@ interface InstallerInfo {
 }
 
 const installerInfo: InstallerInfo = {
-    installerVersion: "v0.2.0-dev-5.0", //change this for every new release
+    installerVersion: "v0.2.0-dev-6.0", //change this for every new release
     macOS: {
         installerUrl: {
             x64: "",
