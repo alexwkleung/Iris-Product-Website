@@ -49,7 +49,32 @@ export function Download(): JSX.Element {
         <>
             <div className="download-container">
                 <div className="download-iris">Download Iris</div>
-                <div className="installer-version-1">Installers will be updated according to the latest release.</div>
+                <div className="installer-version-1">
+                    Installers will be updated according to the latest release.
+                    <br></br>
+                    <br></br>
+                    <span style={
+                        { 
+                            fontFamily: "Inter-Bold" 
+                        }
+                    }>
+                        Notice:
+                    </span> 
+                    <br></br>
+                    <br></br>
+                    v0.2.0-dev-6.0 will be the last v0.2.0-dev release. v0.3.0-dev and beyond will introduce breaking changes due to the incremental rewrite. 
+                    The first stage will be published approximately early 2024
+                    (<a style={
+                        {
+                            fontFamily: 'Inter-Bold',
+                            color: "rgb(106, 106, 142)",
+                            textDecoration: "none"
+                        }    
+                    } 
+                    href="https://github.com/alexwkleung/Iris/pull/90">
+                        See v0.3.0-dev.1 PR
+                    </a>).
+                    </div>
                     <div className="download-box-container">
                             <div className="installers-container">
                                 <div className="desktop-installers">
