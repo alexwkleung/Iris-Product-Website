@@ -10,6 +10,7 @@ export function Navbar(): JSX.Element {
                     <div className="list-links">
                         <Link className="route-root" to={`/`}>Home</Link>
                         <Link className="route-downloads" to={`/downloads`}>Download</Link>
+                        <a className="discord-a" href="https://discord.gg/z9QmRgJsmc" target="_blank">Discord</a>
                         <a className="github-a" href="https://github.com/alexwkleung/Iris" target="_blank">GitHub <img className="github-icon" src={github}></img></a>
                     </div>
                 </div>

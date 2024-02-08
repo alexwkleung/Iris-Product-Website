@@ -59,6 +59,17 @@
     text-decoration-color: rgb(106, 106, 142);
 }
 
+.discord-a {
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: rgb(106, 106, 142);
+}
+.discord-a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(106, 106, 142);
+}
+
 .github-icon {
     position: fixed;
     height: 30px;
