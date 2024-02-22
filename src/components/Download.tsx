@@ -34,16 +34,6 @@ const installerInfo: InstallerInfo = {
     }
 }
 
-/*
-<div className="macos-link-container">
-    <a className="macos-a" href="">Intel (64-bit)</a>
-</div>
-<br></br>
-<div className="macos-link-container">
-    <a className="macos-a" href="">Apple Silicon</a>
-</div>
-*/
-
 export function Download(): JSX.Element {
     return (
         <>
@@ -62,8 +52,10 @@ export function Download(): JSX.Element {
                     </span> 
                     <br></br>
                     <br></br>
-                    v0.2.0-dev-6.0 will be the last v0.2.0-dev release. v0.3.0-dev and beyond will introduce breaking changes due to the incremental rewrite. 
-                    The first stage will be published approximately early 2024
+                    v0.2.0-dev-6.0 will be the last v0.2.0-dev release. v0.3.0-dev and beyond will introduce breaking changes due to the incremental rewrite.
+                    <br></br>
+                    <br></br>
+                    The first stage will be published approximately late 2024 to early 2025.
                     (<a style={
                         {
                             fontFamily: 'Inter-Bold',
@@ -73,7 +65,7 @@ export function Download(): JSX.Element {
                     } 
                     href="https://github.com/alexwkleung/Iris/pull/90">
                         See v0.3.0-dev.1 PR
-                    </a>).
+                    </a> for more details)
                     </div>
                     <div className="download-box-container">
                             <div className="installers-container">
